@@ -11,7 +11,8 @@ All code was run using [PLINK 1.9](https://www.cog-genomics.org/plink2) unless o
 * cc: case-control clustering so every cluster has at least one case and one control
 * ppc: pairwise population concordance (PPC) test
 
-Result: 11 clusters
+Results:
+MDS plot (
+![MDS plot](bc43sloclust.png)
 
-Plot in R:
-![MDS plot](
+
