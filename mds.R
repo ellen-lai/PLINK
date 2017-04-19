@@ -10,7 +10,9 @@ bc43_mds <- inner_join(bc43clust, bc43phen, by="IID")
 
 # MDS with points color-coded by cluster and shape-coded by phenotype
 bc43_mds %>%
-  ggplot(aes(x=C1, y=C2, color=as.character(SOL), shape=as.character(phen)))+
+  ggplot(aes(x=C1, y=C2, shape=as.character(phen), color=as.character(SOL)))+
   geom_point()+
+  labs(shape="Status", color="Cluster number") +
+  scale_shape_discrete(labels = c("Control", "Case")) +
   theme_bw() +
-  ggsave("bc43sloclust.png", width = 8, height = 6, units = c("in"))
+  ggsave("bc43mds.pdf", width = 8, height = 6, units = c("in"))
