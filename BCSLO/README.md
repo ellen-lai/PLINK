@@ -23,9 +23,9 @@ MDS plot (primatively plotted in R using [this code](mds.R))
 ```
   * --mh computes a weighted average of the per-stratum odds ratios for each variant, along with a 1df chi-square statistic and p-value (for the null hypothesis that odds ratios for all strata are equal to 1)
     * outputs to *.cmh
-  * Lambda = 1 (probably overestimated)
+  * Lambda = 
   * Manhattan plot of unajusted data (i.e. bcslo_as1.assoc) plotted in R using qqman ([github page](https://github.com/stephenturner/qqman), [tutorial](http://www.gettinggeneticsdone.com/2014/05/qqman-r-package-for-qq-and-manhattan-plots-for-gwas-results.html))
-  ![as2mh](as1mh_unadj.jpeg)
+  ![as1mh](as1mh_unadj.jpeg)
   * QQ plot of unadjusted data
   ![as1qq](as1qqplot.jpeg)
 
@@ -35,7 +35,7 @@ MDS plot (primatively plotted in R using [this code](mds.R))
 ```
   * Lambda = 1 (probably overestimated)
   * Manhattan plot of unadjusted data  
-  ![as2mh](as2_unadj_mh.jpeg)
+  ![as2mh](as2mh_unadj.jpeg)
   * QQ plot of unadjusted data
   ![as2qq](as2qqplot.jpeg)
   
@@ -44,27 +44,15 @@ MDS plot (primatively plotted in R using [this code](mds.R))
 ```javascript
 ../plink_mac/plink --assoc --dog --tfile ../data/bc43 --maf 0.05 --mind 0.05 --geno 0.05 --ci 0.95 --hwe 0.0001 --adjust qq-plot --out bcslo_as3
 ```
-![as3mh](as3_unadj_mh.jpeg)
-![as3qq](as3qqplot.jpeg)
+  ![as3mh](as3mh_unadj.jpeg)
+  ![as3qq](as3qqplot.jpeg)
 
 4. With permutations
 ```javascript
 ../plink_mac/plink --assoc mperm=100000 --dog --tfile ../data/bc43 --maf 0.05 --mind 0.05 --geno 0.05 --ci 0.95 --hwe 0.0001 --adjust --out bcslo_as4
 ```
-![as4mh](as4.jpeg)
-![as4qq](as4qqplot.jpeg)
-
-All Manhattan plots and qqplots are identical across all 4 associations. Lambda = 1 for all associations.
-
-## Re-run GWAS with new TPED and TFAM files
-```javascript
-../plink_mac/plink --assoc --dog --tfile ../data/bc43slo_redo3 --maf 0.05 --mind 0.05 --geno 0.05 --ci 0.95 --hwe 0.0001 --adjust --out bcslo_as5
-```
-
-```javascript
-../plink_mac/plink --assoc --dog --tfile ../data/bc43slo_redo --maf 0.05 --ci 0.95 --hwe 0.0001 --adjust --out bcslo_as5
-```
-
+  ![as4mh](as4mh_unadj.jpeg)
+  ![as4qq](as4qqplot.jpeg)
 
 ## Runs of homozygosity
 
