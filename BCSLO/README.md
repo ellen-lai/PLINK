@@ -23,7 +23,7 @@ MDS plot (primatively plotted in R using [this code](mds.R))
 ```
   * --mh computes a weighted average of the per-stratum odds ratios for each variant, along with a 1df chi-square statistic and p-value (for the null hypothesis that odds ratios for all strata are equal to 1)
     * outputs to *.cmh
-  * Lambda = 
+  * Lambda = 1.12441
   * Manhattan plot of unajusted data (i.e. bcslo_as1.assoc) plotted in R using qqman ([github page](https://github.com/stephenturner/qqman), [tutorial](http://www.gettinggeneticsdone.com/2014/05/qqman-r-package-for-qq-and-manhattan-plots-for-gwas-results.html))
   ![as1mh](as1mh_unadj.jpeg)
   * QQ plot of unadjusted data
