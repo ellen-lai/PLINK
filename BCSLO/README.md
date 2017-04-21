@@ -49,6 +49,7 @@ Note: All QQ-plots and Manhattan plots were plottedin R using qqman ([github pag
   ![as2qqplotCMH](as2qqplotCMH.jpeg)
   ![as2mh_unadj_cmh](as2mh_unadj_cmh.jpeg)
   * EMP2 p-value
+  
   ![as2mhEMP2](as2mhEMP2.jpeg)
   
 ## GWA without accounting for population stratification
@@ -70,6 +71,7 @@ Note: All QQ-plots and Manhattan plots were plottedin R using qqman ([github pag
   ![as4qq](as4qqplot.jpeg)
   ![as4mh](as4mh_unadj.jpeg)
   * EMP2 p-value
+  
   ![as4mhEMP2](as4mhEMP2.jpeg)
 
 
