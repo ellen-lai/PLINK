@@ -17,7 +17,13 @@ MDS plot (primatively plotted in R using [this code](mds.R))
 ![MDS plot](bc43mds.jpeg)
 
 ## GWA, accounting for clustering
-Note: All QQ-plots and Manhattan plots were plottedin R using qqman ([github page](https://github.com/stephenturner/qqman), [tutorial](http://www.gettinggeneticsdone.com/2014/05/qqman-r-package-for-qq-and-manhattan-plots-for-gwas-results.html))
+All QQ-plots and Manhattan plots were plotted in R using qqman ([github page](https://github.com/stephenturner/qqman), [tutorial](https://cran.r-project.org/web/packages/qqman/vignettes/qqman.html))
+NOTE: To get the annotatePval and annotateTop functions (annotate the SNPs that meet a certain p-value threshold), need to download the latest version using
+
+```
+library(devtools)
+install_github("stephenturner/qqman")
+```
 
 1. No permutations
 ```javascript
@@ -34,8 +40,6 @@ Note: All QQ-plots and Manhattan plots were plottedin R using qqman ([github pag
   ![as1qqplotCMH](as1qqplotCMH.jpeg)
   ![as1mh_unadj_cmh](as1mh_unadj_cmh.jpeg)
   
-  
-
 2. With permutations
 ```javascript
 ../plink_mac/plink --assoc --dog --tfile ../data/bc43 --maf 0.05 --mind 0.05 --geno 0.05 --ci 0.95 --hwe 0.0001 --adjust qq-plot --within bc43clust.cluster2 --mh --mperm 100000 --out bcslo_as2
@@ -76,9 +80,13 @@ Note: All QQ-plots and Manhattan plots were plottedin R using qqman ([github pag
 
 
 ## Runs of homozygosity
-
+1. Determine average LD block size and how man SNPs are in each block
 ```javascript
---allow-no-sex --chr 1-38 --ci 0.95 --dog --geno 0.05 --homozyg group --homozyg-kb 1000 --homozyg-match 0.95 --homozyg-snp 200 --homozyg-window-het 0 --homozyg-window-missing 100 --mind 0.05 --out BC_AFFY_6_no_HETs --pool-size 3 --tfile BC_AFFY_6
+../plink_mac/plink --dog --chr 1-38 --ci .95 --mind .95 --geno .05 --blocks no-pheno-req no-small-max-span --blocks-max-kb 1000 --homozyg-window-het 0 --homozyg-window-missing 100 --tfile ../data/bc43 --out roh1
+```
+2. ROH that differ between cases and controls
+```javascript
+--allow-no-sex --chr 1-38 --ci 0.95 --dog --geno 0.05 --homozyg group --homozyg-kb 1000 --homozyg-match 0.95 --homozyg-snp 200 --homozyg-window-het 0 --homozyg-window-missing 100 --mind 0.05 --out roh2 --pool-size 3 --tfile ../data/bc43
 ```
 
   * `--homozyg-window-het 0` means not allowing any individual to be heterozyous (no misscalls)
