@@ -158,7 +158,7 @@ $ sort -k 4n bcslo_as4.assoc.mperm | head
 ```
 
 ## Runs of homozygosity
-### I. Determine average LD block size and how man SNPs are in each block
+### I. Determine average LD block size and how many SNPs are in each block
 1. [Haplotype block estimation](https://www.cog-genomics.org/plink/1.9/ld#blocks)
 ```javascript
 ../plink_mac/plink --dog --chr 1-38 --ci .95 --mind .95 --geno .05 --blocks no-pheno-req no-small-max-span --blocks-max-kb 1000 --homozyg-window-het 0 --homozyg-window-missing 100 --tfile ../data/bc43 --out roh1
