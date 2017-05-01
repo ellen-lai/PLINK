@@ -2,7 +2,11 @@
 
 ### Background
 Excerpt from [McQuillan et al. 2008](http://www.sciencedirect.com/science/article/pii/S000292970800445X)
+
 ![ROH](ROHfigure.jpeg)
+Figure 1. 
+Pedigree of the Offspring of First Cousins
+An example chromosome is illustrated. The female common ancestor is red. The chromosome inherited from one of her parents is colored red, and the chromosome inherited from her other parent is colored pink. The male common ancestor is blue. The chromosome inherited from one of his parents is colored dark blue, and the chromosome inherited from his other parent is colored light blue. The second generation are sisters. They share around 50% of their chromosomes IBD. The segments colored red and pink are segments inherited from their mother, and the segments colored dark and light blue are segments inherited from their father. The third generation are first cousins. In each case, the second (white) chromosome derives from their fathers (not shown), the red and pink segments are inherited from their maternal grandmother, and the dark and light blue segments are inherited from their maternal grandfather. The offspring of these first cousins has segments inherited from both founders on both copies of the chromosome. Where the same segments have been passed down both sides of the pedigree, the offspring of first cousins has extended identical-by-descent tracts or runs of homozygosity.
 
 
 ### I. Determine average LD block size and how many SNPs are in each block
@@ -58,12 +62,20 @@ Output:
   
 
 ### II. ROH that differ between cases and controls
-
+Analysis analogous to that of [Mok et al. (2013)](http://www.nature.com/ejhg/journal/v21/n12/full/ejhg201359a.html) in humans and [Akkad et al. (2015)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4579392/) in dogs.
 1. Using default parameters for haplotype definition (contains 100 SNPs and >= 1000 kb)
 ```javascript
 ../plink_mac/plink --chr 1-38 --ci 0.95 --dog --geno 0.05 --homozyg group --homozyg-match 0.95 --mind 0.05 --pool-size 3 --tfile ../data/bc43 --out rohcc1
 ```
   * `--homozyg-group` --> `plink.hom.overlap` 
+  * Output
+```
+--homozyg: Scan complete, found 3705 ROH.
+Results saved to rohcc1.hom + rohcc1.hom.indiv + rohcc1.hom.summary .
+895 size-10+ pools of overlapping ROH present.
+ROH pool report written to rohcc1.hom.overlap .
+```
+
 
 2. 
   * increase stringency of heterozygous calls `--homozyg-window-het 0`
