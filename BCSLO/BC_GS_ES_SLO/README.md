@@ -30,7 +30,7 @@ MDS plots were generated in R using [this code](BC_GS_ES_SLO_mds.R).
   
   NOTE: most Bonferroni-corrected p-values were = 1, so the Manhattan plot was not plotted
   
-```javascript
+```
  CHR               SNP      UNADJ         GC       BONF       HOLM   SIDAK_SS   SIDAK_SD     FDR_BH     FDR_BY
   12    BICF2S23661198  1.538e-06  1.654e-06     0.1832     0.1832     0.1674     0.1674    0.09072          1 
   12    BICF2S23416139  1.567e-06  1.685e-06     0.1866     0.1866     0.1702     0.1702    0.09072          1 
@@ -51,7 +51,7 @@ MDS plots were generated in R using [this code](BC_GS_ES_SLO_mds.R).
 ![qqplot](as2qqplot.jpeg)
 ![mh](as2mhEMP2.jpeg)
   
-```javascript
+```
 $ sort -k 4n BC_GS_ES_SLO_as2.assoc.mperm | head
  CHR               SNP         EMP1         EMP2 
   12    BICF2S23661198        1e-05       0.1561 
