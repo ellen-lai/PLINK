@@ -67,7 +67,7 @@ $ sort -k 4n BC_GS_ES_SLO_as2.assoc.mperm | head
 Used GWAS SNPs CanFam3.1 location.xlsx to look up 3.1 position
 
 | Rank | CHR | SNP | EMP1 | EMP2 | Position 3.1 | rs number | 
-|---|---|---|---|---|---|---|
+|:---:|---:|---|---|---|---:|---|
 | 1 | 12 | BICF2S23661198 | 0.00001 | 0.1561 | 2473964 | [rs22185797](http://www.ensembl.org/Canis_familiaris/Variation/Explore?db=core;r=12:2473258-2474258;source=dbSNP;v=rs22185797;vdb=variation;vf=1314807) |
 | 2 | 12 | BICF2S23416139 | 0.00001 | 0.1572 | 3101865 | [rs22186263](http://www.ensembl.org/Canis_familiaris/Variation/Explore?db=core;r=12:3101093-3102093;source=dbSNP;v=rs22186263;vdb=variation;vf=1315284) |
 | 3 | 17 | BICF2G630202698 | 0.00001 | 0.1953 | 48369295 | [rs22596044](http://www.ensembl.org/Canis_familiaris/Variation/Explore?db=core;r=17:48369000-48370000;source=dbSNP;v=rs22596044;vdb=variation;vf=1664100) |
@@ -88,7 +88,7 @@ Rank 3. BICF2G630202698 and rank 4. BICF2G630202687
 ![](3.png)
 
 Rank 5. BICF2P243678 and rank 8. BICF2P182666
-![](5 and 8.png)
+![](5and8.png)
 
 Rank 6. BICF2G630207334
 ![](6.png)
