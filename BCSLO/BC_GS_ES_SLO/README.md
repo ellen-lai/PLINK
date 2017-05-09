@@ -78,27 +78,27 @@ Used GWAS SNPs CanFam3.1 location.xlsx to look up 3.1 position
 | 8 | 4 | BICF2P182666 | 0.00014 | 0.607 | 54176263 | [rs24159649](http://www.ensembl.org/Canis_familiaris/Variation/Explore?db=core;r=4:54176200-54176300;source=dbSNP;v=rs24159649;vdb=variation;vf=2972462) |
 | 9 | 12 | BICF2S23021596 | 0.00004 | 0.6234 | 1640573 | [rs22257558](http://www.ensembl.org/Canis_familiaris/Variation/Explore?db=core;r=12:1640500-1640600;source=dbSNP;v=rs22257558;vdb=variation;vf=1381602) |
 
-1. BICF2S23661198 
+Rank 1. BICF2S23661198 
 ![](1.png)
 
-2. BICF2S23416139
+Rank 2. BICF2S23416139
 ![](2.png)
 
-3. BICF2G630202698 and 4. BICF2G630202687
+Rank 3. BICF2G630202698 and rank 4. BICF2G630202687
 ![](3.png)
 
-5. BICF2P243678 and 8. BICF2P182666
+Rank 5. BICF2P243678 and rank 8. BICF2P182666
 ![](5 and 8.png)
 
-6. BICF2G630207334
+Rank 6. BICF2G630207334
 ![](6.png)
 
-7. BICF2P742333
+Rank 7. BICF2P742333
 ![](7big.png)
 
 ![](7small.png)
 
-9. BICF2S23021596
+Rank 9. BICF2S23021596
 ![](9.png)
 
 
