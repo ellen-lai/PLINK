@@ -80,15 +80,19 @@ Used GWAS SNPs CanFam3.1 location.xlsx to look up 3.1 position
 
 1. BICF2S23661198 
 ![](1.png)
+
 2. BICF2S23416139
 ![](2.png)
+
 3. BICF2G630202698 and 4. BICF2G630202687
 ![](3.png)
+
 5. BICF2P243678 and 8. BICF2P182666
 ![](5 and 8.png)
 
 6. BICF2G630207334
 ![](6.png)
+
 7. BICF2P742333
 ![](7big.png)
 
