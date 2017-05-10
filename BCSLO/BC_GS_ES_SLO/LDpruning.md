@@ -8,7 +8,7 @@
   ```javascript
   ../../plink_mac/plink --dog --maf 0.05 --mind 0.05 --geno 0.05 --ci 0.95 --hwe 0.0001 --assoc --adjust --file ../../data/BC_GS_ES_SLO --out BC_GS_ES_SLO_as3
   ```
- * Top SNPs
+  * Top SNPs
     
 ```
   CHR               SNP      UNADJ         GC       BONF       HOLM   SIDAK_SS   SIDAK_SD     FDR_BH     FDR_BY
@@ -23,11 +23,12 @@
   12    BICF2S23021596  1.879e-05  1.991e-05          1          1     0.8933     0.8933     0.2474          1 
 ```
   * 100k permutation
+  
   ```javascript
   ../../plink_mac/plink --dog --maf 0.05 --mind 0.05 --geno 0.05 --ci 0.95 --hwe 0.0001 --assoc mperm=100000 --adjust --file ../../data/BC_GS_ES_SLO --out BC_GS_ES_SLO_as4
   ```
   
-    * Top SNPs
+  * Top SNPs
 
 ```
     $ sort -k 4n BC_GS_ES_SLO_as4.assoc.mperm | head
