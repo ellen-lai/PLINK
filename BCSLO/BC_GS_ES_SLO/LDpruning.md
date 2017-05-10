@@ -8,7 +8,7 @@
   ```javascript
   ../../plink_mac/plink --dog --maf 0.05 --mind 0.05 --geno 0.05 --ci 0.95 --hwe 0.0001 --assoc --adjust --file ../../data/BC_GS_ES_SLO --out BC_GS_ES_SLO_as3
   ```
-   * Top SNPs
+ * Top SNPs
     
 ```
   CHR               SNP      UNADJ         GC       BONF       HOLM   SIDAK_SS   SIDAK_SD     FDR_BH     FDR_BY
