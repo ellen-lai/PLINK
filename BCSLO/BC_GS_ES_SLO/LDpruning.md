@@ -10,7 +10,7 @@
   ```
    * Top SNPs
     
-    ```
+```
   CHR               SNP      UNADJ         GC       BONF       HOLM   SIDAK_SS   SIDAK_SD     FDR_BH     FDR_BY
   12    BICF2S23661198  1.538e-06  1.654e-06     0.1832     0.1832     0.1674     0.1674    0.09072          1 
   12    BICF2S23416139  1.567e-06  1.685e-06     0.1866     0.1866     0.1702     0.1702    0.09072          1 
@@ -21,7 +21,7 @@
   12      BICF2P742333  1.817e-05  1.926e-05          1          1     0.8852     0.8851     0.2474          1 
    4      BICF2P182666  1.823e-05  1.932e-05          1          1     0.8859     0.8859     0.2474          1 
   12    BICF2S23021596  1.879e-05  1.991e-05          1          1     0.8933     0.8933     0.2474          1 
-  ```
+```
   * 100k permutation
   ```javascript
   ../../plink_mac/plink --dog --maf 0.05 --mind 0.05 --geno 0.05 --ci 0.95 --hwe 0.0001 --assoc mperm=100000 --adjust --file ../../data/BC_GS_ES_SLO --out BC_GS_ES_SLO_as4
